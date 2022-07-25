@@ -1,0 +1,76 @@
+DataBase => Kumpulan informasi yang tersimpan dan terintegrasi dengan baik
+di dalam komputer.
+
+DBMS => Software untuk mengelola DataBase. Mengelola DataBase di sini
+        termasuk menyimpan, memodifikasi dan mengekstrak informasi dari
+        DataBase. Juga menambah, menghapus, mengakses, memodifikasi, dan
+        menganalisis dAta dari satu lokasi.
+
+RDBMS => Jenis DBMS yang memungkinkan informasi antar tabel sAling
+         berelasi (MySQL, PostGreSQL). Dalam model ini, semua data disajikan
+	 dalam batasan tuple, dikelompokkan ke dalam suatu hubungan/relasi.
+         RDBMS dirAncang untuk mengatur/memanajemen sebuah basis data sebagai
+         sekumpulan data yang disimpan secara terstruktur dan melakukan operasi
+         operasi atas data atas permintaan penggunanya.
+
+Hierarki DataBase: DBMS => DataBase => Tabel => Baris dan Kolom 
+
+Baca 12 hukum Cood untuk menadalami definisi RDBMS.
+
+Object Oriented DBMS => DataBase yang dikombinasikan dengan bahasa 
+                        pemrograman berorientasi objek. 
+
+Materinya terkait DataBase
+
+Data       : 	Sekumpulan fakta atau informasi apa adanya tanpa ditambahkan
+       		atau dikurang dan bentuknya bis berupa simbol, angka, 
+                kata-kata, atau citra.
+Tabel      :	Kumpulan dari kolom dan baris sehingga strukturnya lebih 
+                kompleks
+Kolom      :    Kumpulan karakter yang digunakan untuk mengisi data.
+Baris      :    Kumpulan kolom dalam satu baris.
+SQL        :	bahasa khusus yang digunakan untuk proses mengakses data, 
+		khususnya data-data dengan basis relasional.
+Relasi     :	Berkaitan satu sama lain
+P.key      :	Primary Key merupakan sebuah aturan dimana fungsinya adalah 
+                untuk membedakan antara baris satu dengan baris lainnya yang 
+                ada pada tabel dan bersifat unik.
+                Lebih ke arah identitas data dalam satu baris/row. Dengan 
+                kata lain adalah identitas data tersebut.
+                Ketentuan => Data tidak boleh null dan harus unik
+                Ketentuan lain => - untuk menentukannya mengikuti kebijakan
+                                    perusahaan.
+                                  - Usahakan jangan panjang-panjang.
+F.key      :	atribut untuk melengkapi hubungan yang menunjukan ke induknya,
+                biasa digunakan untuk menghubungkan satu tabel dengan tabel
+                lainnya
+Index      :	sebuah objek dalam sistem database yang dapat mempercepat proses 
+                pencarian (query) data.
+Constraint :	pembatasan nilai-nilai yang  diperbolehkan untuk diisikan dalam 
+		sebuah kolom atau kolom-kolom yang terdapat dalam sebuah tabel.
+
+
+Perbedaan tiap server database umumnya terkait struktur engineer dan ada 
+beberapa perbedaan fungsi. 
+
+
+Database
+bc_gen10
+
+nama_peserta
+id_peserta	nama	alamat
+1		akbar   cilacap
+2       	rosita  brebes
+
+nilai
+id_nilai	nilai_coding	id_p
+n1		90		1
+n2		100		2
+
+untuk menghubungkan kedua tabel nama_peserta dengan tabel nilai
+butuh foreign key. Foreign key adalah kolom yang memiliki nilai yang sama.
+
+
+ 
+
+ 
