@@ -1,4 +1,4 @@
-package Inspirotest;
+package LukitoAndriansyah;
 
 import java.util.Scanner;
 
