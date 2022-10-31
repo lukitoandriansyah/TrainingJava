@@ -1,116 +1,74 @@
 package VowelAndConsonantSorter.Consonant;
 
-public class ArrayConsonant extends ConsonantCounter {
+public class ConsonantArraySout extends ConsonantCounterSout {
     public String arrConsonantInput(String paramCounter, String paramVowel) {
         String[] arrInput = paramVowel.split("");
-        String arrConsonant = "";
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("b")) {
-                for (int j = 0; j < counterB(paramCounter); j++) {
-                    arrConsonant += "b";
-                }
+        StringBuilder arrConsonant = new StringBuilder();
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("b")) {
+                arrConsonant.append("b".repeat(Math.max(0, counterB(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("c")) {
-                for (int j = 0; j < counterC(paramCounter); j++) {
-                    arrConsonant += "c";
-                }
+            if (s.equalsIgnoreCase("c")) {
+                arrConsonant.append("c".repeat(Math.max(0, counterC(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("d")) {
-                for (int j = 0; j < counterD(paramCounter); j++) {
-                    arrConsonant += "d";
-                }
+            if (s.equalsIgnoreCase("d")) {
+                arrConsonant.append("d".repeat(Math.max(0, counterD(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("f")) {
-                for (int j = 0; j < counterF(paramCounter); j++) {
-                    arrConsonant += "f";
-                }
+            if (s.equalsIgnoreCase("f")) {
+                arrConsonant.append("f".repeat(Math.max(0, counterF(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("g")) {
-                for (int j = 0; j < counterG(paramCounter); j++) {
-                    arrConsonant += "g";
-                }
+            if (s.equalsIgnoreCase("g")) {
+                arrConsonant.append("g".repeat(Math.max(0, counterG(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("h")) {
-                for (int j = 0; j < counterH(paramCounter); j++) {
-                    arrConsonant += "h";
-                }
+            if (s.equalsIgnoreCase("h")) {
+                arrConsonant.append("h".repeat(Math.max(0, counterH(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("j")) {
-                for (int j = 0; j < counterJ(paramCounter); j++) {
-                    arrConsonant += "j";
-                }
+            if (s.equalsIgnoreCase("j")) {
+                arrConsonant.append("j".repeat(Math.max(0, counterJ(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("k")) {
-                for (int j = 0; j < counterK(paramCounter); j++) {
-                    arrConsonant += "k";
-                }
+            if (s.equalsIgnoreCase("k")) {
+                arrConsonant.append("k".repeat(Math.max(0, counterK(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("l")) {
-                for (int j = 0; j < counterL(paramCounter); j++) {
-                    arrConsonant += "l";
-                }
+            if (s.equalsIgnoreCase("l")) {
+                arrConsonant.append("l".repeat(Math.max(0, counterL(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("m")) {
-                for (int j = 0; j < counterG(paramCounter); j++) {
-                    arrConsonant += "m";
-                }
+            if (s.equalsIgnoreCase("m")) {
+                arrConsonant.append("m".repeat(Math.max(0, counterM(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("n")) {
-                for (int j = 0; j < counterN(paramCounter); j++) {
-                    arrConsonant += "n";
-                }
+            if (s.equalsIgnoreCase("n")) {
+                arrConsonant.append("n".repeat(Math.max(0, counterN(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("p")) {
-                for (int j = 0; j < counterP(paramCounter); j++) {
-                    arrConsonant += "p";
-                }
+            if (s.equalsIgnoreCase("p")) {
+                arrConsonant.append("p".repeat(Math.max(0, counterP(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("q")) {
-                for (int j = 0; j < counterQ(paramCounter); j++) {
-                    arrConsonant += "q";
-                }
+            if (s.equalsIgnoreCase("q")) {
+                arrConsonant.append("q".repeat(Math.max(0, counterQ(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("r")) {
-                for (int j = 0; j < counterR(paramCounter); j++) {
-                    arrConsonant += "r";
-                }
+            if (s.equalsIgnoreCase("r")) {
+                arrConsonant.append("r".repeat(Math.max(0, counterR(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("s")) {
-                for (int j = 0; j < counterS(paramCounter); j++) {
-                    arrConsonant += "s";
-                }
+            if (s.equalsIgnoreCase("s")) {
+                arrConsonant.append("s".repeat(Math.max(0, counterS(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("t")) {
-                for (int j = 0; j < counterT(paramCounter); j++) {
-                    arrConsonant += "t";
-                }
+            if (s.equalsIgnoreCase("t")) {
+                arrConsonant.append("t".repeat(Math.max(0, counterT(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("v")) {
-                for (int j = 0; j < counterV(paramCounter); j++) {
-                    arrConsonant += "v";
-                }
+            if (s.equalsIgnoreCase("v")) {
+                arrConsonant.append("v".repeat(Math.max(0, counterV(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("w")) {
-                for (int j = 0; j < counterW(paramCounter); j++) {
-                    arrConsonant += "w";
-                }
+            if (s.equalsIgnoreCase("w")) {
+                arrConsonant.append("w".repeat(Math.max(0, counterW(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("x")) {
-                for (int j = 0; j < counterX(paramCounter); j++) {
-                    arrConsonant += "x";
-                }
+            if (s.equalsIgnoreCase("x")) {
+                arrConsonant.append("x".repeat(Math.max(0, counterX(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("y")) {
-                for (int j = 0; j < counterY(paramCounter); j++) {
-                    arrConsonant += "y";
-                }
+            if (s.equalsIgnoreCase("y")) {
+                arrConsonant.append("y".repeat(Math.max(0, counterY(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("z")) {
-                for (int j = 0; j < counterZ(paramCounter); j++) {
-                    arrConsonant += "z";
-                }
+            if (s.equalsIgnoreCase("z")) {
+                arrConsonant.append("z".repeat(Math.max(0, counterZ(paramCounter))));
             }
         }
-        return arrConsonant;
+        return arrConsonant.toString();
     }
 }

@@ -1,11 +1,11 @@
 package VowelAndConsonantSorter.Vowel;
 
-public class VowelCounter extends SoutVowel {
+public class VowelCounterSout extends VowelSout {
     public int counterA(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("a")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("a")) {
                 count = count + 1;
             }
         }
@@ -15,8 +15,8 @@ public class VowelCounter extends SoutVowel {
     public int counterI(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("i")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("i")) {
                 count = count + 1;
             }
         }
@@ -26,8 +26,8 @@ public class VowelCounter extends SoutVowel {
     public int counterU(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("u")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("u")) {
                 count = count + 1;
             }
         }
@@ -37,8 +37,8 @@ public class VowelCounter extends SoutVowel {
     public int counterE(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("e")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("e")) {
                 count = count + 1;
             }
         }
@@ -48,8 +48,8 @@ public class VowelCounter extends SoutVowel {
     public int counterO(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("o")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("o")) {
                 count = count + 1;
             }
         }

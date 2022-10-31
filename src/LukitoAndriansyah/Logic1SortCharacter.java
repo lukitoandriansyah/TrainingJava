@@ -1,8 +1,8 @@
-package NawaDataSolution;
+package LukitoAndriansyah;
 
 import java.util.Scanner;
 
-public class Logic1 {
+public class Logic1SortCharacter {
     Scanner variabel = new Scanner(System.in);
 
     public String[] inputWordToArr() {
@@ -32,7 +32,7 @@ public class Logic1 {
     }
 
     public static void main(String[] args) {
-        Logic1 hasil = new Logic1();
+        Logic1SortCharacter hasil = new Logic1SortCharacter();
         hasil.printInputWordToArr();
     }
 

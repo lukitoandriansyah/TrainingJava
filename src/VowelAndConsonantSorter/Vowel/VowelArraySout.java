@@ -1,36 +1,26 @@
 package VowelAndConsonantSorter.Vowel;
 
-public class ArrayVowel extends VowelCounter {
+public class VowelArraySout extends VowelCounterSout {
     public String arrVowelInput(String paramCounter, String paramVowel) {
         String[] arrInput = paramVowel.split("");
-        String arrVowel = "";
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("a")) {
-                for (int j = 0; j < counterA(paramCounter); j++) {
-                    arrVowel += "a";
-                }
+        StringBuilder arrVowel = new StringBuilder();
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("a")) {
+                arrVowel.append("a".repeat(Math.max(0, counterA(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("i")) {
-                for (int j = 0; j < counterI(paramCounter); j++) {
-                    arrVowel += "i";
-                }
+            if (s.equalsIgnoreCase("i")) {
+                arrVowel.append("i".repeat(Math.max(0, counterI(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("u")) {
-                for (int j = 0; j < counterU(paramCounter); j++) {
-                    arrVowel += "u";
-                }
+            if (s.equalsIgnoreCase("u")) {
+                arrVowel.append("u".repeat(Math.max(0, counterU(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("e")) {
-                for (int j = 0; j < counterE(paramCounter); j++) {
-                    arrVowel += "e";
-                }
+            if (s.equalsIgnoreCase("e")) {
+                arrVowel.append("e".repeat(Math.max(0, counterE(paramCounter))));
             }
-            if (arrInput[i].toLowerCase().equals("o")) {
-                for (int j = 0; j < counterO(paramCounter); j++) {
-                    arrVowel += "o";
-                }
+            if (s.equalsIgnoreCase("o")) {
+                arrVowel.append("o".repeat(Math.max(0, counterO(paramCounter))));
             }
         }
-        return arrVowel;
+        return arrVowel.toString();
     }
 }

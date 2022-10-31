@@ -1,13 +1,13 @@
 package VowelAndConsonantSorter;
 
 
-import VowelAndConsonantSorter.Consonant.SoutConsonant;
-import VowelAndConsonantSorter.Vowel.SoutVowel;
+import VowelAndConsonantSorter.Consonant.ConsonantSout;
+import VowelAndConsonantSorter.Vowel.VowelSout;
 
-public class SoutSorter extends Input {
+public class SorterSout extends Input {
     public void soutArrInput(String input){
-        SoutConsonant sc = new SoutConsonant();
-        SoutVowel sv = new SoutVowel();
+        ConsonantSout sc = new ConsonantSout();
+        VowelSout sv = new VowelSout();
 
         sc.soutArrConsonantInput(input);
         sv.soutArrVowelInput(input);

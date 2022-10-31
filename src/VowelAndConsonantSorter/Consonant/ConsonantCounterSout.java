@@ -1,11 +1,11 @@
 package VowelAndConsonantSorter.Consonant;
 
-public class ConsonantCounter extends SoutConsonant {
+public class ConsonantCounterSout extends ConsonantSout {
     public int counterB(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("b")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("b")) {
                 count = count + 1;
             }
         }
@@ -15,8 +15,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterC(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("c")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("c")) {
                 count = count + 1;
             }
         }
@@ -26,8 +26,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterD(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("d")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("d")) {
                 count = count + 1;
             }
         }
@@ -37,8 +37,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterF(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("f")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("f")) {
                 count = count + 1;
             }
         }
@@ -48,8 +48,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterG(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("g")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("g")) {
                 count = count + 1;
             }
         }
@@ -59,8 +59,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterH(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("h")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("h")) {
                 count = count + 1;
             }
         }
@@ -70,8 +70,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterJ(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("j")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("j")) {
                 count = count + 1;
             }
         }
@@ -81,8 +81,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterK(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("k")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("k")) {
                 count = count + 1;
             }
         }
@@ -92,8 +92,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterL(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("l")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("l")) {
                 count = count + 1;
             }
         }
@@ -103,8 +103,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterM(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("m")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("m")) {
                 count = count + 1;
             }
         }
@@ -114,8 +114,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterN(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("n")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("n")) {
                 count = count + 1;
             }
         }
@@ -125,8 +125,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterP(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("p")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("p")) {
                 count = count + 1;
             }
         }
@@ -136,8 +136,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterQ(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("q")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("q")) {
                 count = count + 1;
             }
         }
@@ -147,8 +147,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterR(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("r")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("r")) {
                 count = count + 1;
             }
         }
@@ -158,8 +158,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterS(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("s")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("s")) {
                 count = count + 1;
             }
         }
@@ -169,8 +169,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterT(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("t")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("t")) {
                 count = count + 1;
             }
         }
@@ -180,8 +180,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterV(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("v")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("v")) {
                 count = count + 1;
             }
         }
@@ -191,8 +191,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterW(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("w")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("w")) {
                 count = count + 1;
             }
         }
@@ -202,8 +202,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterX(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("x")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("x")) {
                 count = count + 1;
             }
         }
@@ -213,8 +213,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterY(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("y")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("y")) {
                 count = count + 1;
             }
         }
@@ -224,8 +224,8 @@ public class ConsonantCounter extends SoutConsonant {
     public int counterZ(String param) {
         String[] arrInput = param.split("");
         int count = 0;
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("z")) {
+        for (String s : arrInput) {
+            if (s.equalsIgnoreCase("z")) {
                 count = count + 1;
             }
         }

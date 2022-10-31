@@ -1,14 +1,14 @@
-package NawaDataSolution;
+package LukitoAndriansyah;
 
 import java.util.Scanner;
 
-public class Logic2Revised2 {
+public class Logic2PembatasanSosialBerskalaBsear {
     Scanner variabel = new Scanner(System.in);
 
-    public int totalFamily() {
+    public String totalFamily() {
         System.out.print("Input the number of families : ");
         int m = variabel.nextInt();
-        return m;
+        return String.valueOf(m);
     }
 
     public String totalEachMemberOfFamily() {
@@ -22,11 +22,12 @@ public class Logic2Revised2 {
     }
 
     public void printResult() {
-        String[] totalEachMemberFams = totalEachMemberOfFamily().split(" ");
-        if (totalFamily() == totalEachMemberFams.length) {
+        //String[] totalEachMemberFams = totalEachMemberOfFamily().split(" ");
+        if (Integer.parseInt(totalFamily()) == totalEachMemberOfFamily().split(" ").length) {
             int count = 0;
-            for (int i = 0; i < totalEachMemberFams.length; i++) {
-                count += Integer.parseInt(totalEachMemberFams[i]);
+            int count2=0;
+            for (int i = 0; i < totalEachMemberOfFamily().split(" ").length; i++) {
+                count += Integer.parseInt(totalEachMemberOfFamily().split(" ")[i]);
             }
             if (count % maxPassInOneBus() != 0) {
                 System.out.print("Minimum bus required is: ");
@@ -41,7 +42,7 @@ public class Logic2Revised2 {
     }
 
     public static void main(String[] args) {
-        Logic2Revised2 result = new Logic2Revised2();
+        Logic2PembatasanSosialBerskalaBsear result = new Logic2PembatasanSosialBerskalaBsear();
         result.printResult();
     }
 

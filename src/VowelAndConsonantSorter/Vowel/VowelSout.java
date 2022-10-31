@@ -4,38 +4,38 @@ import VowelAndConsonantSorter.Input;
 
 import java.util.ArrayList;
 
-public class SoutVowel extends Input {
+public class VowelSout extends Input {
     public void soutArrVowelInput(String input) {
         String[] arrInput = input.split("");
-        String inputManipulate = "";
-        for (int i = 0; i < arrInput.length; i++) {
-            if (arrInput[i].toLowerCase().equals("a") || arrInput[i].toLowerCase().equals("i") || arrInput[i].toLowerCase().equals("u") || arrInput[i].toLowerCase().equals("e") || arrInput[i].toLowerCase().equals("o")) {
-                inputManipulate += arrInput[i].toLowerCase();
+        StringBuilder inputManipulate = new StringBuilder();
+        for (String value : arrInput) {
+            if (value.equalsIgnoreCase("a") || value.equalsIgnoreCase("i") || value.equalsIgnoreCase("u") || value.equalsIgnoreCase("e") || value.equalsIgnoreCase("o")) {
+                inputManipulate.append(value.toLowerCase());
             }
         }
 
         ArrayList<String> arrInputManipulate = new ArrayList<>();
-        arrInputManipulate.add(inputManipulate);
+        arrInputManipulate.add(inputManipulate.toString());
 
         ArrayList<String> checkingNoDouble = new ArrayList<>();
 
-        for (int i = 0; i < inputManipulate.split("").length; i++) {
-            if (!checkingNoDouble.contains(inputManipulate.split("")[i])) {
-                checkingNoDouble.add(inputManipulate.split("")[i]);
+        for (int i = 0; i < inputManipulate.toString().split("").length; i++) {
+            if (!checkingNoDouble.contains(inputManipulate.toString().split("")[i])) {
+                checkingNoDouble.add(inputManipulate.toString().split("")[i]);
             }
         }
 
-        String setInputManipulate = "";
+        StringBuilder setInputManipulate = new StringBuilder();
 
-        for (int i = 0; i < checkingNoDouble.size(); i++) {
-            setInputManipulate += checkingNoDouble.get(i);
+        for (String value : checkingNoDouble) {
+            setInputManipulate.append(value);
         }
 
         ArrayList<String> setArrInputManipulateConverted = new ArrayList<>();
-        setArrInputManipulateConverted.add(setInputManipulate);
+        setArrInputManipulateConverted.add(setInputManipulate.toString());
 
-        VowelCounter s = new VowelCounter();
-        ArrayVowel av = new ArrayVowel();
+        VowelCounterSout s = new VowelCounterSout();
+        VowelArraySout av = new VowelArraySout();
 
         s.counterA(arrInputManipulate.get(0));
         s.counterI(arrInputManipulate.get(0));

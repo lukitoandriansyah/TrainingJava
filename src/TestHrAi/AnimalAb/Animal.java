@@ -1,4 +1,6 @@
 package TestHrAi.AnimalAb;
 
-public interface AnimalInterface {
+public interface Animal {
+    public void eat();
+    public void makeSound();
 }

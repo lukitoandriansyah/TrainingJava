@@ -1,4 +1,4 @@
-package TestHrAi;
+package TestHrAi.AnimalAb;
 
 import java.io.*;
 import java.util.*;
@@ -12,13 +12,13 @@ public class AnimalAbillity {
         for (int i = 0; i < 3; i++) {
             String name = sc.nextLine();
             Parrot p = new Parrot();
-            if(name.equals("eat")){
+            if (name.equals("eat")) {
                 p.eat();
             }
-            if(name.equals("makeSound")){
+            if (name.equals("makeSound")) {
                 p.makeSound();
             }
-            if(name.equals("fly")){
+            if (name.equals("fly")) {
                 p.fly();
             }
         }

@@ -1,19 +1,18 @@
 package NawaDataSolution;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Logic2Revised {
+public class Logic2Revised2 {
     Scanner variabel = new Scanner(System.in);
 
     public int totalFamily() {
-        System.out.print("Total of Family: ");
+        System.out.print("Input the number of families : ");
         int m = variabel.nextInt();
         return m;
     }
 
     public String totalEachMemberOfFamily() {
-        System.out.print("Total member of each Family: ");
+        System.out.print("Input the number of members in the family (Separated by a space): ");
         String n = variabel.nextLine();
         return n;
     }
@@ -23,31 +22,18 @@ public class Logic2Revised {
     }
 
     public void printResult() {
-
         String[] totalEachMemberFams = totalEachMemberOfFamily().split(" ");
-        int length = totalEachMemberFams.length;
-
-        if (totalFamily() == length) {
+        if (totalFamily() == totalEachMemberFams.length) {
             int count = 0;
-            System.out.print("Total of each member is :");
-            for (int i = 0; i < length; i++) {
-                System.out.printf("%3d", Integer.parseInt(totalEachMemberFams[i]));
+            for (int i = 0; i < totalEachMemberFams.length; i++) {
+                count += Integer.parseInt(totalEachMemberFams[i]);
             }
-            System.out.println();
-
-            for (int i = 0; i < length; i++) {
-                count = count + Integer.parseInt(totalEachMemberFams[i]);
-            }
-
-            System.out.print("Total all member is :");
-            System.out.printf("%3d", count);
-
             if (count % maxPassInOneBus() != 0) {
-                System.out.print("Minimum bus have must be rent is: ");
-                System.out.printf("%3d", count / maxPassInOneBus() + 1);
+                System.out.print("Minimum bus required is: ");
+                System.out.printf("%d", count / maxPassInOneBus() + 1);
             } else {
-                System.out.print("Minimum bus have must be rent is: ");
-                System.out.printf("%3d", count / maxPassInOneBus());
+                System.out.print("Minimum bus required is: ");
+                System.out.printf("%d", count / maxPassInOneBus());
             }
         } else {
             System.out.println("Input must be equal to count family");
@@ -55,7 +41,7 @@ public class Logic2Revised {
     }
 
     public static void main(String[] args) {
-        Logic2Revised result = new Logic2Revised();
+        Logic2Revised2 result = new Logic2Revised2();
         result.printResult();
     }
 
