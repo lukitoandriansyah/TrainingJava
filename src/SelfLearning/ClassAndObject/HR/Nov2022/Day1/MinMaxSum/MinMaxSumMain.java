@@ -21,4 +21,5 @@ public class MinMaxSumMain {
 
         bufferedReader.close();
     }
+
 }

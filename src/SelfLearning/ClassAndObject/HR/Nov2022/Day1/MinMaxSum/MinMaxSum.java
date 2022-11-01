@@ -12,13 +12,13 @@ public class MinMaxSum {
      */
 
     public static void miniMaxSum(List<Integer> arr) {
-        ArrayList<Integer> listInt=new ArrayList<Integer>();
-        int counter = 0;
+        ArrayList<Long> listInt= new ArrayList<>();
+        long counter = 0;
 
         for(int i = 0; i<arr.size();i++){
             for(int j=0; j<arr.size();j++){
                 if(i!=j){
-                    counter = counter + arr.get(j);
+                    counter = counter + Long.valueOf(arr.get(j));
                 }
             }
             listInt.add(counter);
