@@ -6,6 +6,14 @@ Anda tahu, berinteraksi dengan memanggil
 metode.
 
 Suatu objek terdiri dari :
-State: Ini diwakili oleh atribut suatu objek. Ini juga mencerminkan sifat-sifat suatu objek.
-Behaviour: Ini diwakili oleh metode suatu objek. Ini juga mencerminkan respons suatu objek dengan objek lain.
-Identity: Ini memberikan nama unik untuk suatu objek dan memungkinkan satu objek untuk berinteraksi dengan objek lain.
+State    : Ini diwakili oleh atribut suatu
+           objek. Ini juga mencerminkan
+           sifat-sifat suatu objek.
+Behaviour: Ini diwakili oleh metode suatu
+           objek. Ini juga mencerminkan
+           respons suatu objek dengan objek
+           lain.
+Identity : Ini memberikan nama unik untuk
+           suatu objek dan memungkinkan satu
+           objek untuk berinteraksi dengan
+           objek lain.

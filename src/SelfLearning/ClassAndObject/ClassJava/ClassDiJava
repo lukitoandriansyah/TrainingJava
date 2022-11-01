@@ -14,3 +14,10 @@
  • constructor
  • nested class and
  • interface
+
+Konstruktor digunakan untuk menginisialisasi
+objek baru.
+Bidang adalah variabel yang menyediakan status
+kelas dan objeknya.
+Methode digunakan untuk mengimplementasikan
+perilaku kelas dan objeknya.
