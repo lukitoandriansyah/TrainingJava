@@ -1,0 +1,18 @@
+Sekilas tentang OOP
+
+Paradigma pemrograman yang menggunakan objek 
+sebagai sumber utama dalam mengimplementasikan
+apa yang akan terjadi pada suatau code.
+
+Objek di sini berarti adalah sesuatu yang dilihat
+oleh user yang menjalanan tugas/perintah sesuai 
+yang kita berikan. 
+
+tujuan dari OOP adalahk untuk mengimplementasikan 
+entitas dalanm dunia nyata dimana dapat terjadi
+pewarisan, perubahan banyak bentuyk, hiding, dll.
+
+Tujuan utamanya dari paradigma progra ini adalah
+mengikat data bersaman dengan fungsi yang 
+dioperasikan sehingga tidak ada bagian yang dapat 
+mengakses data tersebut kecualil fungsi terkait.
