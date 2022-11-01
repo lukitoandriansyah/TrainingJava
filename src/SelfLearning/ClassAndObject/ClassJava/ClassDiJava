@@ -1,0 +1,16 @@
+1. Kelas adalah sekumpulan objek
+   yang memiliki karakteristik / perilaku
+   yang sama dan properti / atribut umum.
+2. Kelas bukanlah entitas dunia nyata. Ini
+   hanyalah template atau cetak biru atau
+   prototipe dari mana objek dibuat.
+3. Kelas tidak menempati memori.
+4. Kelas adalah sekelompok variabel dari
+   berbagai jenis data dan kelompok metode.
+
+ A class in java can contain:
+ • data member
+ • method
+ • constructor
+ • nested class and
+ • interface
