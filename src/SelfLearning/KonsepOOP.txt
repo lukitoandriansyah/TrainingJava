@@ -1,0 +1,5 @@
+Konsep Dari OOP adalah sebagaiberikut:
+1. Class
+2. Object
+3. Method dan Method Passing
+4. Pilar OOP (abstraksi, Encapsulasi, Inheritence, PolyMorphism)

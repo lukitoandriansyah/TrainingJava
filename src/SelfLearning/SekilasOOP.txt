@@ -17,3 +17,11 @@ mengikat data bersaman dengan fungsi yang
 dioperasikan sehingga tidak ada bagian yang dapat 
 mengakses data tersebut kecualil fungsi terkait.
 
+Objek berkomunikasi satu sama lain dengan mengirim dan
+menerima informasi satu sama lain. Pesan untuk suatu objek
+adalah permintaan untuk pelaksanaan suatu prosedur dan oleh
+karena itu akan memanggil fungsi dalam objek penerima yang
+menghasilkan hasil yang diinginkan. Penyampaian pesan
+melibatkan penentuan nama objek, nama fungsi dan informasi
+yang akan dikirim.
+
