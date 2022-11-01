@@ -16,3 +16,4 @@ Tujuan utamanya dari paradigma progra ini adalah
 mengikat data bersaman dengan fungsi yang 
 dioperasikan sehingga tidak ada bagian yang dapat 
 mengakses data tersebut kecualil fungsi terkait.
+
