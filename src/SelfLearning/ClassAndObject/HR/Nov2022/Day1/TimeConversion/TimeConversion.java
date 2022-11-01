@@ -15,20 +15,20 @@ public class TimeConversion {
         for(int i = 0; i<timeStr.length; i++){
             if(i==0){
                 if(timeStr[0].equals("0")&&!(timeStr[timeStr.length-2].equals("A"))){
-                    countTime = countTime + String.valueOf(Integer.parseInt(timeStr[1]) + 12) ;
+                    countTime = countTime + (Integer.parseInt(timeStr[1]) + 12);
                 }
                 if(timeStr[0].equals("1")&&!(timeStr[timeStr.length-2].equals("A"))){
                     if(timeStr[1].equals("2")){
                         countTime = countTime + timeStr[0]+timeStr[1];
                     }
-                    countTime = countTime + String.valueOf(Integer.parseInt(timeStr[0]+timeStr[1]) + 12) ;
+                    countTime = countTime + (Integer.parseInt(timeStr[0] + timeStr[1]) + 12);
                 }
                 if(timeStr[0].equals("0")&&timeStr[timeStr.length-2].equals("A")){
                     countTime = countTime + timeStr[0]+ timeStr[1];
                 }
                 if(timeStr[0].equals("1")&&timeStr[timeStr.length-2].equals("A")){
                     if(timeStr[1].equals("2")){
-                        countTime = countTime + String.valueOf(Integer.parseInt(timeStr[0]+timeStr[1]) + 12) ;
+                        countTime = countTime + (Integer.parseInt(timeStr[0] + timeStr[1]) + 12);
                     }else{
                         countTime = countTime + timeStr[0]+timeStr[1];
                     }
@@ -42,23 +42,23 @@ public class TimeConversion {
             timeStr[0]=countTimeStr[0];
             timeStr[1]=countTimeStr[1];
 
-            String timeS = "";
+            StringBuilder timeS = new StringBuilder();
             for(int i = 0; i<timeStr.length-2;i++){
-                timeS = timeS + timeStr[i];
+                timeS.append(timeStr[i]);
             }
 
-            return timeS;
+            return timeS.toString();
         }
 
         String[] countTimeStr = countTime.split("");
         timeStr[0]=countTimeStr[0];
         timeStr[1]=countTimeStr[1];
-        String timeS = "";
+        StringBuilder timeS = new StringBuilder();
         for(int i = 0; i<timeStr.length-2;i++){
-            timeS = timeS + timeStr[i];
+            timeS.append(timeStr[i]);
         }
 
-        return timeS;
+        return timeS.toString();
     }
 
 }
