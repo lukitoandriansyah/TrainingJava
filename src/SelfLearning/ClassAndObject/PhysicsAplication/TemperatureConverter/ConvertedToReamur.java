@@ -26,6 +26,6 @@ public class ConvertedToReamur {
             double result = Math.round(valueConverted * 1000.0) / 1000.0;
             return ("Temperature Converted is: " + result + " " + unitResult);
         }
-        return "";
+        return ("Wrong Input, Try Again");
     }
 }

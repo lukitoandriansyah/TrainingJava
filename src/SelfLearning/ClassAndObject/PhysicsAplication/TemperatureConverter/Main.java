@@ -7,7 +7,7 @@ public class Main {
         System.out.println("===========  Converted temperature  ==========");
         System.out.print("Input Value: ");
         double value = scanner.nextDouble();
-        System.out.print("Input Initial Unit: ");
+        System.out.print("Input Initial Unit \n(required one: f,F,r,R,k,K,c,C): ");
         String unitInput = scanner.next();
         Converted converted = new Converted();
         Choice choice = new Choice();
